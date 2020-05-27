@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Apxor</key>
+	<dict>
+		<key>Core</key>
+		<string>20ffd8ea-2617-45bf-be5a-04be9e0e4657</string>
+		<key>APXWYSIWYGPlugin</key>
+		<true/>
+		<key>APXRTAPlugin</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -28,7 +37,7 @@
 			<key>UIApplicationShortcutItemIconFile</key>
 			<string>Challenges</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>Today's Challenge</string>
+			<string>Today&apos;s Challenge</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string>com.hackingwithswift.unwrapswift.challenges</string>
 		</dict>

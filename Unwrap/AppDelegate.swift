@@ -9,6 +9,7 @@
 import AVKit
 import UIKit
 import Zephyr
+import ApxorSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             window?.backgroundColor = .white
         }
+        
+        ApxorSDK.getDeviceID()
 
         // Instantiate UserDefaults keys to be monitored
         let defaults = UserDefaults()

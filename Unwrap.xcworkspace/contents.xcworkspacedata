@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../Latest Master Apxor/ApxoriOSSDK/APXContextEvaluator/APXContextEvaluator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Latest Master Apxor/ApxoriOSSDK/APXWYSIWYGPlugin/APXWYSIWYGPlugin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Latest Master Apxor/ApxoriOSSDK/APXRTAPlugin/APXRTAPlugin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Latest Master Apxor/ApxoriOSSDK/ApxorSDK/ApxorSDK.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Unwrap.xcodeproj">
    </FileRef>
    <FileRef
