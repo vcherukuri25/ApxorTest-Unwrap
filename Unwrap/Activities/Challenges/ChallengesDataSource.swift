@@ -49,11 +49,14 @@ class ChallengesDataSource: NSObject, UITableViewDataSource {
                 cell.accessoryType = .none
                 cell.selectionStyle = .none
                 cell.textLabel?.text = "Come Back Tomorrow"
+                cell.tag = 101;
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "Challenge", for: indexPath)
                 cell.accessoryType = .disclosureIndicator
                 cell.textLabel?.text = Date().formatted
+                cell.tag = 101;
+
                 return cell
             }
         } else {
@@ -63,11 +66,15 @@ class ChallengesDataSource: NSObject, UITableViewDataSource {
                 cell.textLabel?.text = "No completed challenges yet"
                 cell.detailTextLabel?.text = nil
                 cell.selectionStyle = .none
+                //cell.tag = 101;
+
             } else {
                 let challenge = User.current.dailyChallenges[indexPath.row]
                 cell.textLabel?.text = "\(challenge.date.formatted)"
                 cell.detailTextLabel?.text = "Score: \(challenge.score)"
                 cell.selectionStyle = .default
+               // cell.tag = 101;
+
             }
 
             return cell

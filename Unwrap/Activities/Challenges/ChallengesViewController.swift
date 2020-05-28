@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ApxorSDK
 
 /// The main view controller you see in  the Challenges tab in the app.
 class ChallengesViewController: UITableViewController, UserTracking {
@@ -29,6 +30,7 @@ class ChallengesViewController: UITableViewController, UserTracking {
         extendedLayoutIncludesOpaqueBars = true
 
         NotificationCenter.default.addObserver(self, selector: #selector(userDataChanged), name: UIApplication.willEnterForegroundNotification, object: nil)
+        
 
     }
 
@@ -38,6 +40,7 @@ class ChallengesViewController: UITableViewController, UserTracking {
         // reload our table each time the user returns here so that daily challenge updates correctly
         tableView.reloadData()
         coordinator?.resetDetailViewController()
+        ApxorSDK .logScreen(withName: "ChallengesViewController")
 
     }
 

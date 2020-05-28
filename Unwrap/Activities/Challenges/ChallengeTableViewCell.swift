@@ -19,8 +19,21 @@ class ChallengeTableViewCell: UITableViewCell {
         detailTextLabel?.text = "Each daily challenge may be attempted only once."
         detailTextLabel?.font = Unwrap.scaledBaseFont
         detailTextLabel?.numberOfLines = 0
+        
+       // let  longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector("longPressed:"))
+       //       self.addGestureRecognizer(longPressRecognizer)
+        let long = UILongPressGestureRecognizer(target: self, action: #selector(longPressed(sender:)))
+        self.addGestureRecognizer(long)
+    }
+    
+  @objc  func longPressed(sender: UILongPressGestureRecognizer)
+    {
+        print("longpressed")
     }
 
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        return self;
+    }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

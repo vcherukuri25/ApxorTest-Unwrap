@@ -8,12 +8,17 @@
 
 import StoreKit
 import UIKit
+import ApxorSDK
 
 /// The main view controller you see in  the Home tab in the app.
 class HomeViewController: UITableViewController, Storyboarded, UserTracking {
     var coordinator: HomeCoordinator?
     var dataSource = HomeDataSource()
     var reviewRequested = false
+    
+    override func viewWillAppear(_ animated: Bool) {
+        ApxorSDK.logScreen(withName: "HomeViewController")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
